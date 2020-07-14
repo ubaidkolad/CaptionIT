@@ -1,0 +1,192 @@
+html,
+body {
+  background: #ededed;
+}
+.navbar {
+  background: #353c41;
+  border-bottom: 5px solid #88ce04;
+}
+
+.navbar-brand {
+  font-size: 5vh;
+}
+
+.btn {
+  background: #88ce04;
+}
+.card-5 {
+  /* box-shadow: 0 19px 38px rgba(27, 27, 27, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); */
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+#upload {
+  color: #88ce04;
+}
+.gradient {
+  background: linear-gradient(to right, hsl(98 100% 62%), hsl(204 100% 59%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.alert {
+  background-color: #88ce04;
+  color: #353c41;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  border-radius: 20px;
+  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
+}
+
+.card-header,
+.card-body {
+  color: #88ce04;
+}
+
+.card {
+  background: #353c41;
+}
+.card:hover {
+  cursor: pointer;
+  border: 2px solid green;
+}
+
+.custom-file-input {
+  background: blue;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+.scroll {
+  font-size: 7vh;
+  color: hsl(98 100% 62%);
+  position: fixed;
+  animation: updown 0.8s ease infinite;
+}
+
+.cap {
+  font-size: 3.4vh;
+}
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  /* background-color: #353c41; */
+  color: #88ce04;
+  text-align: center;
+  padding: 12px;
+}
+.text-success {
+  font-size: 3vh !important;
+}
+.img-fade {
+  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  50% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+}
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+}
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+  .display-4 {
+    font-size: 2.5rem;
+  }
+  .cap {
+    font-size: 2.4vh;
+  }
+  .navbar-brand {
+    font-size: 3vh;
+  }
+}
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
